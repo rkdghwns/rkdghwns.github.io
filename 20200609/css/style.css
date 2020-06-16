@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.tc{
+    color: black;
+}
+.logo>a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+}
+.logo>button{
+    display: block;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 30px;
+}
+.menu a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bolder;
+}
+.menu{
+    display: none;
+}
+
+/* -------------------------------- */
+.banner{
+    background-image: url(../images/mainpage_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    color: white;
+    letter-spacing: 0.2em;
+    font-size: 10vh;
+}
+.banner p{
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 3vh;
+}
+/* --------------------------------------- work*/
+.work>article>div{
+    background-color: gray;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    color: white; 
+    margin: 20px auto;
+
+}
+.work>article{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+.work>article>h2{
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------- portfolio*/
+.portfolio>.text{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+.sub_title{
+    color: gray;
+    font-size: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+.portfolio{    
+    background-color: #eee;
+}
+.portfolio img{
+    width: 150px;
+}
+
+
+/* -------------------------------------------contact */
+.contact>.text{
+    text-align: center;
+}
+.text>ul{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+.contact .icon{
+    background-color: gray;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    color: white;
+    margin-right: 20px;
+}
+/* ------------------------------------------footer*/
+footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 50px;
+}
+.footer p{
+    padding-top: 25px;
+}
+/* 테블릿 사이즈 */
+
+@media all and (min-width:768px)
+{
+    .header{
+        display: flex;
+        justify-content : space-between;
+    }
+    .logo>button{
+        display: none;
+    }
+    .menu ul{
+        display: flex;  
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu{
+        display: block;
+    }
+
+/* ------------------------------work */
+.work{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.work>article{
+    width: 20%;
+}
+/* ------------------------------work */
+}
+/* pc사이즈 */
+@media all and (min-width:1024px)
+{
+    .header{
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
