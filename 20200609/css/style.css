@@ -46,12 +46,14 @@
 .banner h1{
     color: white;
     letter-spacing: 0.2em;
-    font-size: 10vh;
+    font-size: 8vh;
+    display: flex;
 }
 .banner p{
     color: white;
     letter-spacing: 0.1em;
     font-size: 3vh;
+    display: flex;
 }
 /* --------------------------------------- work*/
 .work>article>div{
@@ -77,7 +79,10 @@
 .work>article>h2{
     margin-bottom: 30px;
 }
-
+.work>article>p{
+    font-size: 1em;
+    line-height: 1.5;
+}
 /* --------------------------------------- portfolio*/
 .portfolio>.text{
     text-align: center;
@@ -93,11 +98,15 @@
 .portfolio{    
     background-color: #eee;
 }
-.portfolio img{
-    width: 150px;
+.portfolio>.img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
 }
-
-
 /* -------------------------------------------contact */
 .contact>.text{
     text-align: center;
@@ -169,5 +178,15 @@ footer{
     .header{
         width: 1024px;
         margin: 0 auto;
+    }
+    .banner h1{
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 10vh;
+    }
+    .banner p{
+        color: white;
+        letter-spacing: 0.1em;
+        font-size: 3vh;
     }
 }
