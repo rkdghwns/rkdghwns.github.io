@@ -1,1 +1,0 @@
-# rkdghwns.github.io
