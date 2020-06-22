@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.tc{
+    color: black;
+}
+.logo>a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+}
+.logo>button{
+    display: block;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 30px;
+}
+.menu a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bolder;
+}
+.menu{
+    display: none;
+}
+
+.banner{
+    background-image: url(../images/mainpage_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about>h1{
+    font-size: 70px;
+    color: gray;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 80px;
+}
+.about>p{
+font-weight: bold;
+text-align: center;
+margin-top: 20px;
+}
+
+.text>p{
+    text-align: center;
+    width: 70%;
+    margin: 50px auto;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.work>article>div{
+    background-color: gray;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    color: white; 
+    margin: 20px auto;
+
+}
+.work>article{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+.work>article>h2{
+    margin-bottom: 30px;
+}
+.work>article>p{
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 50px;
+}
+.footer p{
+    padding-top: 25px;
+}
+
+@media all and (min-width:768px){
+    .header{
+        display: flex;
+        justify-content : space-between;
+    }
+    .logo>button{
+        display: none;
+    }
+    .menu ul{
+        display: flex;  
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu{
+        display: block;
+    }  
+
+    .work{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .work>article{
+        width: 20%;
+    }
+    .text>p{
+        text-align: center;
+        width: 50%;
+        margin: 50px auto;
+    }
+}
+
+@media all and (min-width:1024px)
+{
+    .header{
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
