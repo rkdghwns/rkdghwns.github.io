@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img{
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>이미지 변경하기</h1>
+    <hr>
+    <img src="./img/강아지.jpg" alt="갱얼쥐">
+    
+    <script>
+        //변수 만들기
+        let imgTitle =["강아지","고양이","그레이디언트","단락입력","닷지"];
+        let index=0;
+        // 1.이미지 객체를 가져온다.
+        let imgTag = document.querySelector('img');
+        console.log( imgTag );
+        //2. 이벤트 등록
+        imgTag.onclick = function change(){
+            //3.src를 변경
+            // imgTag.src="../images/coffee2.jpg"
+            index++;
+            if( index >= imgTitle.length ){
+            index=0;
+        }
+            imgTag.setAttribute("src","img/"+imgTitle[index]+".jpg" )
+        };
+
+
+    </script>
+    
+</body>
+</html>

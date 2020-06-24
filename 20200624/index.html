@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 구조 알아보기</title>
+</head>
+<body>
+    <p class="name"></p>
+    <h1 id="ti">국내 여행지</h1>
+    <ul>
+        <li class="list">서울</li>
+        <li class="list">부산</li>
+        <li class="list">제주</li>
+        <li class="list">속초</li>
+    </ul>
+    <script>
+        const item = document.querySelectorAll(".list");
+        console.log(item);
+        for( let i of item )
+        {
+            console.log(i.innerHTML);
+        }
+        // for( let i=0 ; i<item.length ; i++)
+        // {
+        //     console.log(item[i].innerHTML);    
+        // }
+        // const item = document.querySelector("li");
+        // console.log(item);
+        // const item = document.getElementsByTagName("h1");
+        // console.log( item );
+        // console.log( item[0] );
+        // const item = document.getElementById("ti");
+        // console.log( item );
+        // item.innerHTML = "타이틀을 수정합니다.";
+        // item.style.backgroundColor =" red ";
+
+        // const cssitem = document.querySelector("#ti");
+        // console.log(cssitem);
+    </script>
+</body>
+</html>
