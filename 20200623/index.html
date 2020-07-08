@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        *{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>어서오세요</h1>
+    <script>
+        let strName;
+        do{
+        var strName = prompt("이름을 입력하세요");
+        console.log(strName);
+        } while(strName==="" || strName===null);
+        document.write('<b><big> ${strName} </big></b> 님 환영합니다.');
+    </script>
+</body>
+</html>

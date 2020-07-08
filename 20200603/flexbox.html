@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 3px solid black;
+            background-color: gray;
+            font-size: 0em;
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            /* align-items: center; */
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border: 2px dashed red;
+            border-radius: 5px;
+            font-size: 3rem;
+            font-weight: bolder;
+            
+            flex-basis: 0;
+            
+            /* display: inline-block; */
+            /* float: left;
+            
+        }
+        .clear{
+            clear: both; */
+        }
+        .item:nth-of-type(1){
+            /* order: 2; */
+            flex: 1 2;
+        }
+        .item:nth-of-type(2){
+            /* order: 0; */
+            flex: 2 1;
+        }
+        .item:nth-of-type(3){
+            /* order: 1; */
+            flex: 1 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="clear"></div>
+    </div>
+    
+</body>
+</html>

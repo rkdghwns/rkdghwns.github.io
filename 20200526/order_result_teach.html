@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>주문서 작성하기</title>
+    <style>
+         .container{
+            width: 50%;
+            margin: 0px auto;
+        }
+        label{
+            /* display: inline-block; */
+            width: 80px;
+            float: left;
+            /* 메모글자 패딩 바텀값을 줘서 글자올려버리기 */
+            /* display: table-cell;
+            vertical-align: top; ----오류 발생가능(메모에 class 를 넣고 메모에만 flote;left가 남) */
+        }
+        
+        ul{
+            list-style-type: none;
+        }
+        label.last{
+            width: 300px;
+            margin: 5px 0px;
+        }
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+        }
+        legend{
+            color: purple;
+        }
+        h3{
+            margin: 0px;
+        }
+        fieldset{
+            margin-top: 30px;
+            height: 100%;
+        }
+        li{
+            margin: 10px 0px;
+        }
+        /* .pos{
+            float: left;
+        } */
+    </style>
+</head>
+<body>
+    <form class="container">
+            <h1>상품주문서</h1>
+            <fieldset>
+                <legend><h3>개인정보</h3></legend>
+                <ul>
+                    <li>
+                        <label for="txt">이름</label>
+                        <input type="text" id="txt" placeholder="여백없이 입력">
+                    </li>
+                    <li>
+                        <label for="tell">연락처</label>
+                        <input type="tel" id="tell" placeholder="연락가능한 번호">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>배송지 정보</h3></legend>
+                <ul>
+                    <li>
+                        <label for="add">주소</label>
+                        <input type="text" id="add">
+                    </li>
+                    <li>
+                        <label for="phone">전화번호</label>
+                        <input type="text" id="phone">
+                    </li>
+                    <li>
+                        <label class="pos">메모</label> 
+                        <textarea rows="3" cols="30" style="resize: none;"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>주문정보</h3></legend>
+                <ul>
+                    <li>
+                        <label class="last">
+                            <input type="checkbox">
+                            과테말라 안티구아 (100g)
+                        </label>
+                        <label class="last">
+                            <input type="number" min="1" max="5" value="0">
+                            개
+                        </label>
+                    </li>
+                    <li>
+                        <label class="last">
+                            <input type="checkbox">
+                            인도네시아 만델링 (100g) 
+                        </label>
+                        <label class="last">
+                            <input type="number" min="1" max="5" value="0">
+                            개
+                        </label>
+                    </li>
+                    <li>
+                        <label class="last">
+                            <input type="checkbox">
+                            탐라는도다(블렌딩) (100g)
+                        </label>
+                        <label class="last">
+                            <input type="number" min="1" max="5" value="0">
+                            개
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="footer">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시작성">
+            </div>
+    </form>
+</body>
+</html>

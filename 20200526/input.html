@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>input form</title>
+</head>
+<body>
+    <form method="GET">
+        <fieldset>
+            <legend>회원가입</legend>
+        <label>ID : </label>
+        <input type="text" value="" name="id"/>
+        <label>PASSWORD :</label>
+        <input type="password" value="" name="pw"/>
+        <input type="submit"/>
+    </fieldset>
+    </form>
+    <hr>
+    <label>
+        <input type="radio" name="select">
+        A등급
+    </label>
+    <!-- for, id -->
+    <input id="radio" type="radio" name="select">
+    <label for="radio">B등급</label>
+    <hr>
+    <label>
+        <input type="checkbox"/>
+        C등급
+    </label>
+    <input type="checkbox" id="check">
+    <label for="check">D등급</label>
+    <textarea>11111</textarea>
+    <hr>
+    <select size="5" multiple>
+        <optgroup label="group1">
+            <option>가아아아</option>
+            <option>나아아아</option>
+        </optgroup>
+        <optgroup label="group2">
+            <option>다아아아</option>
+            <option>라아아아</option>
+            <option>마아아아</option>
+        </optgroup>
+    </select>
+</body>
+</html>
